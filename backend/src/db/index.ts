@@ -8,7 +8,13 @@ if (!ENV.DATABASE_URL) {
 }
 
 // initialize PostgreSQL connection pool
-const pool = new Pool({ connectionString: ENV.DATABASE_URL });
+
+const pool = new Pool({
+  connectionString: ENV.DATABASE_URL,
+  max: 10,
+  idleTimeoutMillis: 30_000,
+  connectionTimeoutMillis: 5_000,
+});
 
 // log when first connection is made
 pool.on("connect", () => {
