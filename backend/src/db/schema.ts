@@ -79,3 +79,4 @@ export type NewProduct = typeof products.$inferInsert;
 
 export type Comment = typeof comments.$inferSelect;
 export type NewComment = typeof comments.$inferInsert;
+
