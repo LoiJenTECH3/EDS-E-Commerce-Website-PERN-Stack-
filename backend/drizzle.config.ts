@@ -1,4 +1,4 @@
- import { defineConfig } from "drizzle-kit";
+ import { defineConfig } from "drizzle-kit"; //
  import { ENV } from "./src/config/env";
  
 if (!ENV.DATABASE_URL) {
