@@ -3,7 +3,12 @@ import { useMutation } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { syncUser } from "../lib/api";
 
-// the best way to implement this is by using webhooks
+/**
+ * Synchronizes the currently authenticated Clerk user with the backend and exposes whether that sync succeeded.
+ *
+ * Triggers a sync when a user is signed in and user data is available; subsequent calls do not re-run while a sync is pending or after a successful sync.
+ * @returns {{ isSynced: boolean }} An object with `isSynced`: `true` if the user has been successfully synced with the backend, `false` otherwise.
+ */
 function useUserSync() {
   const { isSignedIn } = useAuth();
   const { user } = useUser();

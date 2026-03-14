@@ -10,6 +10,12 @@ import useAuthReq from "./hooks/useAuthReq";
 import useUserSync from "./hooks/useUserSync";
 
  
+/**
+ * Render the main application layout and client routes once authentication is initialized.
+ *
+ * Triggers user data synchronization as a side effect and returns null while authentication is still loading.
+ * @returns {JSX.Element|null} The application's root React element when authentication is initialized, or `null` while authentication is loading.
+ */
 function App() {
   const { isClerkLoaded, isSignedIn } = useAuthReq();
   useUserSync();
