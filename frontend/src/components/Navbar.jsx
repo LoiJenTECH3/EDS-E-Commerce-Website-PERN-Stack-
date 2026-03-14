@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex-1">
           <Link to="/" className="btn btn-ghost gap-2">
             <Computer className="size-10 text-primary" />
-            <span className="text-xl font-bold font-mono uppercase tracking-wider">EDS Computer Shop</span>
+            <span className="text-xl font-bold font-mono uppercase tracking-wider">Electrocomputer Data System</span>
           </Link>
         </div>
 
