@@ -36,11 +36,11 @@ function HomePage() {
               Welcome to <span className="text-primary"> E D S</span>
             </h1>
             <p className="py-4 text-base-content/60">
-              Unlock ultimate performance. Shop cutting-edge PC tech now!
+              Unlock ultimate performance. Explore the latest cutting-edge tech now!
             </p>
             <SignInButton mode="modal">
               <button className="btn btn-primary">
-                <SparklesIcon className="size-4" />
+                <SparklesIcon className="size-6" />
                 Explore Our Tech Products
               </button>
             </SignInButton>
@@ -51,7 +51,8 @@ function HomePage() {
       {/* PRODUCTS */}
       <div>
         <h2 className="text-xl font-bold flex items-center gap-2 mb-4">
-          <PackageIcon className="size-5 text-primary" />
+          <PackageIcon className="size-8
+           text-primary" />
           All Products
         </h2>
 
